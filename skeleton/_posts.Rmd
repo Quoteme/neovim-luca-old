@@ -1,0 +1,10 @@
+---
+layout: post
+title: @BASENAME@
+author: @AUTHOR@
+date: @DATE@
+output: md_document
+draft: true
+---
+
+@CURSOR@

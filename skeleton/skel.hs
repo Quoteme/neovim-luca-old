@@ -1,0 +1,3 @@
+module @BASENAME@ where
+
+@CURSOR@
