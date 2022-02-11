@@ -6,4 +6,6 @@ Simply use "," or "-" to trigger some extra nifty commands.
 
 ![https://i.imgur.com/vxOhOtn.png](https://i.imgur.com/vxOhOtn.png)
 
--- TODO: Add an example of how to call this git repo using `nix-shell`
+# Running `neovim-luca` without installation
+
+Install the nix package manager and run `nix run github:quoteme/neovim-luca`
