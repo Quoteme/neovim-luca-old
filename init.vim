@@ -257,6 +257,9 @@ lua << EOF
 require'nvim-treesitter.configs'.setup {
 	highlight = {
 		enable = true,
+		disable = function(lang, bufnr) -- Disable in python because this is currently broken TODO fix this
+			return lang == "python" or lang == "vim"
+		end,
 	},
 	rainbow = { -- nvim-ts-rainbow
 	  enable = true,
@@ -384,3 +387,6 @@ EOF
 " MARKDOWN
 	autocmd FileType markdown setlocal expandtab
 	autocmd FileType markdown map <F5> :!pandoc<space>%<space>-o<space>%:r.pdf<enter>
+
+" CLOJURE
+	autocmd FileType clojure :Lein
