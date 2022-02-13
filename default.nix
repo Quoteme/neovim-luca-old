@@ -140,6 +140,7 @@ stdenv.mkDerivation rec {
     mkdir -p $out/bin
     # this makes it possible for my neovim to be called using `nvim`
     # or `vim` inside of a terminal
+    ln -sf ${myneovim}/bin/nvim $out/bin/nvim-luca
     ln -sf ${myneovim}/bin/nvim $out/bin/nvim
     ln -sf ${myneovim}/bin/nvim $out/bin/vim
   '';

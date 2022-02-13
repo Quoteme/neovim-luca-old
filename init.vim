@@ -99,6 +99,8 @@ lua << EOF
 local wk = require("which-key")
 wk.setup{}
 wk.register({
+	b = {':Buffers<CR>', "show Buffers"},
+	t = {':tab ball<CR>', "make all Buffers tabs"},
 	c = {
 		':exec &conceallevel ? "set conceallevel=0<CR>" : "set conceallevel=1"',
 		'toggle conceal'
